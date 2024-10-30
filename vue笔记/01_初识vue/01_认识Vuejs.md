@@ -49,15 +49,15 @@
 
   - 在打开的网页中右键网页另存为
 
-  - ![2021-08-06_13-40-19](.\image\Snipaste_2021-08-06_13-40-19.png)
+  - ![2021-08-06_13-40-19](image/Snipaste_2021-08-06_13-40-19.png)
 
-  - ![Snipaste_2021-08-06_13-41-02](.\image\Snipaste_2021-08-06_13-41-02.png)
+  - ![Snipaste_2021-08-06_13-41-02](image/Snipaste_2021-08-06_13-41-02.png)
 
   - 直接在官网下载
 
-    - ![Snipaste_2021-08-06_13-45-12](.\image\Snipaste_2021-08-06_13-45-12.png)
+    - ![Snipaste_2021-08-06_13-45-12](image/Snipaste_2021-08-06_13-45-12.png)
     - 点击开发版本
-      - ![Snipaste_2021-08-06_13-46-15](image\Snipaste_2021-08-06_13-46-15.png)
+      - ![Snipaste_2021-08-06_13-46-15](image/Snipaste_2021-08-06_13-46-15.png)
 
   - ```python
     # 开发环境 https://vuejs.org/js/vue.js 

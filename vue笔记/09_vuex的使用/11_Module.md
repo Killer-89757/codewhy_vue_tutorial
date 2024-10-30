@@ -9,7 +9,7 @@
 
   - 为了解决这个问题, **Vuex允许我们将store分割成模块(Module)**, **而每个模块拥有自己的state、mutations、actions、getters等**
   
-    ![image-20210910143506063](images\image-20210910143506063.png)
+    ![image-20210910143506063](images/image-20210910143506063.png)
   
 
 ### Module局部状态
@@ -38,7 +38,7 @@
             getters:{}
         },
     }
-    ```
+  ```
   
   - **mutation和getters接收的第一个参数是局部状态对象**
   
@@ -47,9 +47,9 @@
   
   - 但是在调用的时候, 依然是通过this.$store来直接调用的
   
-    ![image-20210910143544637](images\image-20210910143544637.png)
+    ![image-20210910143544637](images/image-20210910143544637.png)
   
-    ![image-20210910143640389](images\image-20210910143640389.png)
+    ![image-20210910143640389](images/image-20210910143640389.png)
 
 ### Actions的写法
 
@@ -57,9 +57,9 @@
   
 - **局部状态通过 context.state 暴露出来**，**根节点状态则为 context.rootState**
   
-    ![image-20210910143756300](images\image-20210910143756300.png)
+    ![image-20210910143756300](images/image-20210910143756300.png)
   
 - 如果getters中也需要使用全局的状态, 可以接受更多的参数
 
-  ![image-20210910143835710](images\image-20210910143835710.png)
+  ![image-20210910143835710](images/image-20210910143835710.png)
 

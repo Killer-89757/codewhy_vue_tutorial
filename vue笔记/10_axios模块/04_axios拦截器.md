@@ -4,11 +4,11 @@
 
 - 使用拦截器
 
-  ![image-20210910152412614](images\image-20210910152412614.png)
+  ![image-20210910152412614](images/image-20210910152412614.png)
 
-![image-20210910152449827](images\image-20210910152449827.png)
+![image-20210910152449827](images/image-20210910152449827.png)
 
-![image-20210910152529332](images\image-20210910152529332.png)
+![image-20210910152529332](images/image-20210910152529332.png)
 
 ```js
 export function request(config) {
@@ -45,7 +45,7 @@ export function request(config) {
 
 打印请求拦截下来的`config`信息
 
-![image-20241024104432241](images\image-20241024104432241.png)
+![image-20241024104432241](images/image-20241024104432241.png)
 
 - 请求拦截中拿到了`config`之后，一定要记得`return config`，否则将会造成请求失败
   - 实际的核心就是对`config`进行检查和增删操作
@@ -56,7 +56,7 @@ export function request(config) {
 
 - 请求拦截可以做到的事情：
 
-  ![image-20210910152628669](images\image-20210910152628669.png)
+  ![image-20210910152628669](images/image-20210910152628669.png)
 
 - 请求拦截中错误拦截较少，通常都是配置相关的拦截
 
@@ -66,9 +66,9 @@ export function request(config) {
 
   - 响应的成功拦截中，主要是对数据进行过滤
 
-  ![image-20210910152858098](images\image-20210910152858098.png)
-  ![image-20210910152937457](images\image-20210910152937457.png)
+  ![image-20210910152858098](images/image-20210910152858098.png)
+  ![image-20210910152937457](images/image-20210910152937457.png)
 
 - 响应的失败拦截中，可以根据status判断报错的错误码，跳转到不同的错误提示页面
 
-  ![image-20210910153006586](images\image-20210910153006586.png)
+  ![image-20210910153006586](images/image-20210910153006586.png)

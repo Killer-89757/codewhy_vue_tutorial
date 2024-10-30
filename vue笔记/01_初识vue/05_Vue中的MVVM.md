@@ -8,7 +8,7 @@
 
 ### 我们直接来看Vue的MVVM
 
-![图片1](image\图片1.png)
+![图片1](image/图片1.png)
 
 ####  View层：
 
@@ -45,4 +45,4 @@
 > 其次ViewModel通过DOM Listener来监听DOM事件，并且通过methods中的操作，来改变obj中的数据。
 > 有了Vue帮助我们完成VueModel层的任务，在后续的开发，我们就可以专注于数据的处理，以及DOM的编写工作了。
 
-![01-计数器的MVVM](image\01-计数器的MVVM.png)
+![01-计数器的MVVM](image/01-计数器的MVVM.png)

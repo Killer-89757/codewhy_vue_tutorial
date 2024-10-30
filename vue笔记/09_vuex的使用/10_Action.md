@@ -56,6 +56,6 @@
   - 在Action中, 我们可以将异步操作放在一个Promise中, 并且在成功或者失败后, 调用对应的resolve或reject.
 - OK, 我们来看下面的代码
 
-  ![image-20210910142824577](images\image-20210910142824577.png)
+  ![image-20210910142824577](images/image-20210910142824577.png)
 
-  ![image-20210910142914620](images\image-20210910142914620.png)
+  ![image-20210910142914620](images/image-20210910142914620.png)

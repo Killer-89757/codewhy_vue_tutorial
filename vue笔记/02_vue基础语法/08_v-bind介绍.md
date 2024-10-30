@@ -61,7 +61,7 @@
 </html>
 ```
 
-![Snipaste_2021-08-09_04-55-37](image\Snipaste_2021-08-09_04-55-37.png)
+![Snipaste_2021-08-09_04-55-37](image/Snipaste_2021-08-09_04-55-37.png)
 
 ## v-bind语法糖
 

@@ -8,7 +8,7 @@
   - URL的hash也就是锚点(#), 本质上是改变window.location的href属性.
   - 我们可以通过直接赋值location.hash来改变href, 但是页面不发生刷新
 
-![动画1](images\动画1.gif)
+![动画1](images/动画1.gif)
 
 ### HTML5的history模式：pushState
 
@@ -17,13 +17,13 @@
   - pushState更像一个栈
 
 
-![动画2](images\动画2.gif)
+![动画2](images/动画2.gif)
 
 ### HTML5的history模式：replaceState
 
 - history.replaceState()
 
-![动画3](images\动画3.gif)
+![动画3](images/动画3.gif)
 
 ### HTML5的history模式：go
 
@@ -41,4 +41,4 @@
     - 会自动添加一个`#`
   - 这三个接口等同于浏览器界面的前进后退。
 
-![动画4](images\动画4.gif)
+![动画4](images/动画4.gif)

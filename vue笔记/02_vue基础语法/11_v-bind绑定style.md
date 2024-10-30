@@ -65,7 +65,7 @@ style后面跟的是一个数组类型
 </html>
 ```
 
-![Snipaste_2021-08-09_05-54-10](image\Snipaste_2021-08-09_05-54-10.png)
+![Snipaste_2021-08-09_05-54-10](image/Snipaste_2021-08-09_05-54-10.png)
 
 ```html
 <!--这个主要是v-bind的绑定style使用-->
@@ -100,4 +100,4 @@ style后面跟的是一个数组类型
 </html>
 ```
 
-![Snipaste_2021-08-09_06-04-55](image\Snipaste_2021-08-09_06-04-55.png)
+![Snipaste_2021-08-09_06-04-55](image/Snipaste_2021-08-09_06-04-55.png)

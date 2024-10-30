@@ -41,5 +41,5 @@
 
 v-show的原理操控display属性
 
-![Snipaste_2021-08-10_07-00-26](image\Snipaste_2021-08-10_07-00-26.png)
+![Snipaste_2021-08-10_07-00-26](image/Snipaste_2021-08-10_07-00-26.png)
 

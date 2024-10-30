@@ -37,4 +37,4 @@
 </html>
 ```
 
-![Snipaste_2021-08-06_17-05-47](image\Snipaste_2021-08-06_17-05-47.png)
+![Snipaste_2021-08-06_17-05-47](image/Snipaste_2021-08-06_17-05-47.png)

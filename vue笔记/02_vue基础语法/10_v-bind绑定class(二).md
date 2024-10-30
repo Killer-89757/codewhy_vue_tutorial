@@ -63,5 +63,5 @@
 </html>
 ```
 
-![Snipaste_2021-08-09_05-35-55](image\Snipaste_2021-08-09_05-35-55.png)
+![Snipaste_2021-08-09_05-35-55](image/Snipaste_2021-08-09_05-35-55.png)
 

@@ -32,7 +32,7 @@ const routes = [
 ]
 ```
 
-![动画6](images\动画6.gif)
+![动画6](images/动画6.gif)
 
 ### HTML5的History模式
 
@@ -50,7 +50,7 @@ const router = new VueRouter({
 })
 ```
 
-![动画7](images\动画7.gif)
+![动画7](images/动画7.gif)
 
 ### router-link补充
 
@@ -70,7 +70,7 @@ const router = new VueRouter({
     </template>
     ```
 
-    ![企业微信截图_20210908093523](images\企业微信截图_20210908093523.png)
+    ![企业微信截图_20210908093523](images/企业微信截图_20210908093523.png)
 
   - **replace**: replace不会留下history记录, 所以指定replace的情况下, 后退键返回不能返回到上一个页面中
 
@@ -84,7 +84,7 @@ const router = new VueRouter({
     </template>
     ```
 
-    ![动画8](images\动画8.gif)
+    ![动画8](images/动画8.gif)
 
   - **active-class**: 当<router-link>对应的路由匹配成功时, 会自动给当前元素设置一个router-link-active的class, 设置active-class可以修改默认的名称.
 
@@ -114,7 +114,7 @@ const router = new VueRouter({
     </style>
     ```
 
-    ![动画10](images\动画10.gif)
+    ![动画10](images/动画10.gif)
 
   ```python
   # 在router/index.js中进行修改
@@ -137,8 +137,9 @@ const router = new VueRouter({
 ### 路由代码跳转
 
 - 有时候, 页面的跳转可能需要执行对应的JavaScript代码, 这个时候, 就可以使用第二种跳转方式了
-  - **安装vue-router后，我们的vue-router会给每个对象都添加一个$router的属性**
-
+  
+- **安装vue-router后，我们的vue-router会给每个对象都添加一个$router的属性**
+  
 - 比如, 我们将代码修改如下: 
 
   ```python
@@ -172,7 +173,7 @@ const router = new VueRouter({
   </style>
   ```
 
-  ![动画11](images\动画11.gif)
+  ![动画11](images/动画11.gif)
 
   ```python
   # 使用replace的方式进行切换路由
@@ -205,6 +206,6 @@ const router = new VueRouter({
   </style>
   ```
 
-  ![动画12](images\动画12.gif)
+  ![动画12](images/动画12.gif)
 
   

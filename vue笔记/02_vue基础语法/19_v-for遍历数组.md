@@ -48,7 +48,7 @@
 </html>
 ```
 
-![Snipaste_2021-08-11_20-55-03](image\Snipaste_2021-08-11_20-55-03.png)
+![Snipaste_2021-08-11_20-55-03](image/Snipaste_2021-08-11_20-55-03.png)
 
 遍历对象
 
@@ -95,4 +95,4 @@
 </html>
 ```
 
-![Snipaste_2021-08-11_21-05-34](image\Snipaste_2021-08-11_21-05-34.png)
+![Snipaste_2021-08-11_21-05-34](image/Snipaste_2021-08-11_21-05-34.png)

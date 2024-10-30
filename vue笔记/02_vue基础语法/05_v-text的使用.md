@@ -38,4 +38,4 @@
 </html>
 ```
 
-![Snipaste_2021-08-06_16-58-08](image\Snipaste_2021-08-06_16-58-08.png)
+![Snipaste_2021-08-06_16-58-08](image/Snipaste_2021-08-06_16-58-08.png)

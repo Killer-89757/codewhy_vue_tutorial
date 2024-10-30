@@ -42,7 +42,7 @@
 </html>
 ```
 
-![Snipaste_2021-08-09_05-03-03](image\Snipaste_2021-08-09_05-03-03.png)
+![Snipaste_2021-08-09_05-03-03](image/Snipaste_2021-08-09_05-03-03.png)
 
 **实战代码：对象的方式进行添加**
 
@@ -90,13 +90,13 @@
 
 效果如下：
 
-![Snipaste_2021-08-09_05-12-45](image\Snipaste_2021-08-09_05-12-45.png)
+![Snipaste_2021-08-09_05-12-45](image/Snipaste_2021-08-09_05-12-45.png)
 
-![Snipaste_2021-08-09_05-13-08](image\Snipaste_2021-08-09_05-13-08.png)
+![Snipaste_2021-08-09_05-13-08](image/Snipaste_2021-08-09_05-13-08.png)
 
-![Snipaste_2021-08-09_05-13-22](image\Snipaste_2021-08-09_05-13-22.png)
+![Snipaste_2021-08-09_05-13-22](image/Snipaste_2021-08-09_05-13-22.png)
 
-![Snipaste_2021-08-09_05-13-47](image\Snipaste_2021-08-09_05-13-47.png)
+![Snipaste_2021-08-09_05-13-47](image/Snipaste_2021-08-09_05-13-47.png)
 
 **v-bind改变颜色小案例**
 
@@ -145,7 +145,7 @@
 </html>
 ```
 
-![动画5](image\动画5.gif)
+![动画5](image/动画5.gif)
 
 - 绑定方式：**对象语法**
   - 对象语法的含义是:class后面跟的是一个对象。
@@ -212,7 +212,7 @@
 </html>
 ```
 
-![Snipaste_2021-08-09_05-23-50](image\Snipaste_2021-08-09_05-23-50.png)
+![Snipaste_2021-08-09_05-23-50](image/Snipaste_2021-08-09_05-23-50.png)
 
 **使用methods中的方法加载属性**
 
@@ -264,5 +264,5 @@
 </html>
 ```
 
-![Snipaste_2021-08-09_05-30-04](image\Snipaste_2021-08-09_05-30-04.png)
+![Snipaste_2021-08-09_05-30-04](image/Snipaste_2021-08-09_05-30-04.png)
 

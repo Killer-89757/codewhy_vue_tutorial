@@ -39,7 +39,7 @@
 
 效果：
 
-![Snipaste_2021-08-10_05-55-41](image\Snipaste_2021-08-10_05-55-41.png)
+![Snipaste_2021-08-10_05-55-41](image/Snipaste_2021-08-10_05-55-41.png)
 
 v-if和v-else的使用
 
@@ -83,7 +83,7 @@ v-if和v-else的使用
 
 效果如图:
 
-![动画16](image\动画16.gif)
+![动画16](image/动画16.gif)
 
 v-if和v-else-if和v-else的使用
 
@@ -118,7 +118,7 @@ v-if和v-else-if和v-else的使用
 
 效果如图：
 
-![动画17](image\动画17.gif)
+![动画17](image/动画17.gif)
 
 使用计算属性进行改进(更通用)
 

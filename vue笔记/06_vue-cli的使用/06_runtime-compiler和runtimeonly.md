@@ -41,7 +41,7 @@
 
 ### vue的运行过程
 
-![image-20210907120551237](images\image-20210907120551237.png)
+![image-20210907120551237](images/image-20210907120551237.png)
 
 > - 自我理解：
 >   - 首先我们得template会先在vm.options.template中进行放置
@@ -64,9 +64,9 @@ render:function (createElement){
 
 - 效果如图所示
 
-  ![企业微信截图_20210907142101](images\企业微信截图_20210907142101.png)
+  ![企业微信截图_20210907142101](images/企业微信截图_20210907142101.png)
 
-  ![企业微信截图_20210907142031](images\企业微信截图_20210907142031.png)
+  ![企业微信截图_20210907142031](images/企业微信截图_20210907142031.png)
 
 ```python
 render:function (createElement){
@@ -75,7 +75,7 @@ render:function (createElement){
 }
 ```
 
-![企业微信截图_20210907142454](images\企业微信截图_20210907142454.png)
+![企业微信截图_20210907142454](images/企业微信截图_20210907142454.png)
 
 ```python
 render:function (createElement){
@@ -84,13 +84,13 @@ render:function (createElement){
 }
 ```
 
-![企业微信截图_20210907142812](images\企业微信截图_20210907142812.png)
+![企业微信截图_20210907142812](images/企业微信截图_20210907142812.png)
 
 在App传入到createElement函数之前，我们的App就已经被编译成了一个Object，可以直接完成渲染的过程
 
-![企业微信截图_20210907143318](images\企业微信截图_20210907143318.png)
+![企业微信截图_20210907143318](images/企业微信截图_20210907143318.png)
 
-![企业微信截图_20210907143506](images\企业微信截图_20210907143506.png)
+![企业微信截图_20210907143506](images/企业微信截图_20210907143506.png)
 
 那么.vue文件中的template是由谁进行处理的那？
 
@@ -98,14 +98,14 @@ render:function (createElement){
 
 > 实际上，我们在开发的过程中我们安装了vue-template-compiler这个组件，这个组件会将我们的.vue中的template直接编译成一个包含render方法的对象，可以直接在VUE对象中进行渲染得到，所以在我们将项目打包的时候，我们的.vue文件都是经过编译的文件了，这样我们在prod环境只需要vue就能执行相关的代码，并不需要依赖vue-template-compiler。
 >
-> ![image-20241022152253199](images\image-20241022152253199.png)
+> ![image-20241022152253199](images/image-20241022152253199.png)
 >
 > 因为在开发时后才需要这个组件将template转化成render，当我们build之后，我们的文件中就不存在template了，都被render替换掉了，所以vue-template-compiler是开发时依赖
 
-![image-20210907145159941](images\image-20210907145159941.png)
+![image-20210907145159941](images/image-20210907145159941.png)
 
 - 简单总结
   - 如果在之后的开发中，你依然使用template，就需要选择Runtime-Compiler
   - 如果你之后的开发中，使用的是.vue文件夹开发，那么可以选择Runtime-only
 
-![image-20210907145308057](images\image-20210907145308057.png)
+![image-20210907145308057](images/image-20210907145308057.png)
