@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <h2>总价格：{{all_price}}</h2>
+</div>
+
+<script src="../vue.js"></script>
+
+<script>
+  const app = new Vue({
+    el:"#app",
+    data:{
+      message:"hello world",
+      books:[
+        {"id":100,name:"python编程基础",price:100},
+        {"id":101,name:"linux命令大全",price:70},
+        {"id":102,name:"操作系统",price:99},
+        {"id":103,name:"计算机组成原理",price:34},
+        {"id":104,name:"数据结构和算法",price:29},
+      ]
+    },
+    // computed是有缓存的，methods是没有缓存的，调用几次执行几次
+    computed:{
+      all_price:function (){
+        let result=0
+        for (let i=0;i<this.books.length;i++){
+          result += this.books[i].price
+        }
+        return result
+
+      }
+    }
+  })
+</script>
+</body>
+</html>

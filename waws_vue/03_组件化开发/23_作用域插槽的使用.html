@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+    <cpn></cpn>
+
+    <cpn>
+        <!--目的是获取子组件中的movies-->
+        <template slot-scope="slot">
+<!--            <span v-for="item in slot.data"> - {{item}}</span>-->
+            <span>{{slot.data.join(' - ')}}</span>
+        </template>
+    </cpn>
+
+    <cpn>
+        <!--目的是获取子组件中的movies-->
+        <template slot-scope="slot">
+            <!--<span v-for="item in slot.data">{{item}} * </span>-->
+            <span>{{slot.data.join(' * ')}}</span>
+        </template>
+    </cpn>
+    <!--<cpn></cpn>-->
+</div>
+
+<template id="cpn">
+    <div>
+        <slot :data="movies">
+            <ul>
+                <li v-for="item in movies">{{item}}</li>
+            </ul>
+        </slot>
+    </div>
+</template>
+<script src="../vue.js"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            message: '你好啊'
+        },
+        components: {
+            cpn: {
+                template: '#cpn',
+                data() {
+                    return {
+                        movies: ['海贼王', '钢铁侠', '史努比', '火影忍者', '三个火枪手']
+                    }
+                }
+            }
+        }
+    })
+</script>
+
+
+</body>
+</html>

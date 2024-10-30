@@ -1,0 +1,29 @@
+<!--这个主要是v-pre的使用-->
+<!--1.使用方式v-text="变量、表达式"-->
+<!--2.将元素的值原封不动的进行输出-->
+<!--3.假设我们要输出的就是{{message}},不用mustache语法解析-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <h2>{{message}}</h2>
+  <h2 v-pre>{{message}}</h2>
+</div>
+
+<script src="../vue.js"></script>
+
+<script>
+  const app = new Vue({
+    el:"#app",
+    data:{
+      message:"hello world"
+    }
+  })
+</script>
+</body>
+</html>

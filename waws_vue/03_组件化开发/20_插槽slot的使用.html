@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+
+    <my_cpn></my_cpn>
+    <my_cpn>
+        <p>waws 就是神!!!</p>
+        <p>毁灭世界</p>
+        <p>唯我独尊</p>
+    </my_cpn>
+    <my_cpn></my_cpn>
+</div>
+
+
+<template id="cpn">
+    <div>
+        <h2>这是子组件信息</h2>
+        <slot><button>按钮</button></slot>
+    </div>
+</template>
+
+<script src="../vue.js"></script>
+
+<script>
+
+    const app = new Vue({
+        el:"#app",
+        data:{
+            message:"hello world"
+        },
+        components:{
+            my_cpn:{
+                template:"#cpn",
+            }
+        }
+    })
+</script>
+</body>
+</html>

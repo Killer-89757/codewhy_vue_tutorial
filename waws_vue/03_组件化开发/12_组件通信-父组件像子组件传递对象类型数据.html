@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <cpn2 v-bind:cmovies="movies" :cmessage="message"></cpn2>
+</div>
+
+<template id="cpn">
+  <div>
+    <ul>
+      <li v-for="item in cmovies">{{item}}</li>
+    </ul>
+    <p>{{cmessage}}</p>
+  </div>
+</template>
+
+<script src="../vue.js"></script>
+
+<script>
+  //子组件
+  const cpnC2 = Vue.extend({
+    template:"#cpn",
+    props:{
+      //1.类型限制
+      // cmovies:Array,
+      // cmessage:String,
+
+      //2.提供一些默认值,类型，必要性
+      cmessage:{
+        type:String,
+        default:"aaaaa",
+        required:true
+      },
+
+      //类型是对象或者数组的时候，默认值必须是工厂函数
+      // cmovies:{
+      //   type:Array,
+      //   default:[]  //vue 2.5.17以后会报错
+      // }
+
+      cmovies:{
+        type:Array,
+        default(){
+          return []
+        }
+      }
+    },
+    data() {
+      return {
+
+      }
+    }
+  })
+
+
+  //可以看作是一个默认的组件root
+  const app = new Vue({
+    el:"#app",
+    data:{
+      message:"hello world",
+      movies:["海贼王","四驱兄弟","火影忍者","犬夜叉"]
+    },components:{
+      cpn2:cpnC2
+    }
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <ul>
+    <li v-for="item in letter">{{item}}</li>
+  </ul>
+  <button @click="btnClickPush">push</button>
+  <button @click="btnClickPop">pop</button>
+  <button @click="btnClickShift">shift</button>
+  <button @click="btnClickUnshift">unshift</button>
+  <button @click="btnClickSplice">splice</button>
+  <button @click="btnClickSort">Sort</button>
+  <button @click="btnClickReverse">reverse</button>
+  <button @click="btnClickIndexChange">index_change</button>
+  <button @click="btnClickVueSet">VueSet</button>
+</div>
+
+<script src="../vue.js"></script>
+
+<script>
+  const app = new Vue({
+    el:"#app",
+    data:{
+      letter:["A","B","C","D"]
+    },
+    methods:{
+      btnClickPush:function (){
+        this.letter.push("aaa")
+      },
+      btnClickPop:function (){
+        this.letter.pop()
+      },
+      btnClickShift:function (){
+        // shift删除数组中的第一个元素
+        this.letter.shift()
+      },
+      btnClickUnshift:function (){
+        // unshift在数组最前面增加元素
+        this.letter.unshift("aaa")
+      },
+      btnClickSplice:function (){
+        //删除一个元素
+        this.letter.splice(2,1)
+      },
+      btnClickSort:function (){
+        this.letter.sort()
+      },
+      btnClickReverse:function (){
+        this.letter.reverse()
+      },
+      btnClickIndexChange:function (){
+        //并不具有响应式
+        this.letter[0] = "index_change"
+      },
+      btnClickVueSet:function (){
+        //具有响应式
+        Vue.set(this.letter,1,"vue_set")
+      }
+    }
+  })
+</script>
+</body>
+</html>

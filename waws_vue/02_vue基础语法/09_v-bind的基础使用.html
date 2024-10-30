@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <!--错误的做法，这个地方使用mustache语法的话，属性不会解析-->
+  <!--<img src="{{imgurl}}" alt="">-->
+
+  <!--正确的做法，这个地方使用v-bind语法,解析属性-->
+  <img v-bind:src="imgurl" alt="">
+  <a v-bind:href="ahref">百度一下</a>
+
+
+</div>
+
+<script src="../vue.js"></script>
+
+<script>
+  const app = new Vue({
+    el:"#app",
+    data:{
+      message:"hello world",
+      imgurl:"http://image1.chinanews.com.cn/cnsupload/big/2021/05-28/4-426/a9c289af870d4199a77c896bac89fa2b.jpg",
+      ahref:"http://www.baidu.com/",
+    }
+  })
+</script>
+</body>
+</html>

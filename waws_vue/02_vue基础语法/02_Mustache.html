@@ -1,0 +1,39 @@
+<!--这个主要是Mustache胡子语法的使用-->
+<!--1.双大括号的写法-->
+<!--2.简单的构成表达式-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <h2>{{message}}</h2>
+  <h2>{{message}},最好的vue!!</h2>
+  <!--变量转化成基本的表达式-->
+  <h2>{{lastname + firstname}}</h2>
+  <h2>{{lastname + " " + firstname}}</h2>
+  <h2>{{lastname}}  {{firstname}}</h2>
+  <h2>{{counter * 2}}</h2>
+
+</div>
+
+<script src="../vue.js"></script>
+
+<script>
+  const app = new Vue({
+    el:"#app",
+    data:{
+      message:"hello world",
+        lastname:"waws",
+        firstname:"520",
+        counter:100
+    }
+  })
+</script>
+
+</body>
+</html>

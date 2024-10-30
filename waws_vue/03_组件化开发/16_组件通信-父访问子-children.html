@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <!--3.组件的使用-->
+  <my_cpn></my_cpn>
+  <my_cpn></my_cpn>
+  <my_cpn></my_cpn>
+  <button @click="btnClick">按钮</button>
+</div>
+
+
+<template id="cpn">
+  <div>
+    <h2>这是子组件信息</h2>
+  </div>
+</template>
+
+<script src="../vue.js"></script>
+
+<script>
+
+  const app = new Vue({
+    el:"#app",
+    data:{
+      message:"hello world"
+    },
+    components:{
+      my_cpn:{
+        template:"#cpn",
+        data(){
+          return {
+            name:"waws",
+            age:19
+          }
+        },methods:{
+          showMessage(){
+            console.log("这个是子组件的信息")
+          }
+        }
+      }
+    },
+    methods:{
+      btnClick(){
+
+        // 这个地方需要我们使用下标定位数据,当我们的代码做了一定的改动,下标可能失效,所以实战中很少用到
+        console.log(this.$children)
+        for (let c of this.$children){
+          console.log(c.name);
+          c.showMessage();
+        }
+      }
+    }
+  })
+</script>
+</body>
+</html>

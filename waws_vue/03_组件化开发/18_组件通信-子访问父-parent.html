@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <my_cpn></my_cpn>
+</div>
+
+
+<template id="cpn">
+  <ccpn></ccpn>
+</template>
+
+<template id="ccpn">
+  <div>
+    <h2>这是子组件信息</h2>
+    <button @click="btnClick">按钮</button>
+  </div>
+</template>
+
+<script src="../vue.js"></script>
+
+<script>
+
+  const app = new Vue({
+    el:"#app",
+    data:{
+      message:"hello world"
+    },
+    components:{
+      my_cpn:{
+        template:"#cpn",
+        data(){
+          return {
+            name:"waws",
+          }
+        },
+        components: {
+          ccpn: {
+            template: "#ccpn",
+            methods: {
+              btnClick() {
+                console.log(this.$parent)
+                console.log(this.$parent.name)
+              }
+            }
+          }
+        }
+      }
+    },
+  })
+</script>
+</body>
+</html>

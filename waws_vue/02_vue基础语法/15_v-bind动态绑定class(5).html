@@ -1,0 +1,45 @@
+<!--这个主要是v-bind的绑定class使用-->
+<!--1.使用v-bind进行使用methods中的方法加载属性-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+      .active{
+          color:red
+      }
+      .line{
+          text-decoration: underline;
+      }
+  </style>
+</head>
+<body>
+<div id="app">
+  <!--注意这个地方使用methods中构造的方法对class进行加载，注意方法使用小括号-->
+  <div v-bind:class="getallclass()">{{message}}</div>
+</div>
+
+<script src="../vue.js"></script>
+
+<script>
+  const app = new Vue({
+    el:"#app",
+    data:{
+      message:"hello world",
+      isactive:true,
+      isline:true,
+    },
+    methods:{
+      changecolor:function (){
+        this.isactive = !this.isactive
+      },
+      getallclass:function (){
+        return {active:this.isactive,line:this.isline}
+      }
+    }
+  })
+</script>
+</body>
+</html>

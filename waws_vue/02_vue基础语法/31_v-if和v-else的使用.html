@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <h2 v-if="isShow">
+    isShow是true的时候显示的内容
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+  </h2>
+  <h2 v-else>
+    isShow是false的时候显示的内容
+  </h2>
+</div>
+
+<script src="../vue.js"></script>
+
+<script>
+  const app = new Vue({
+    el:"#app",
+    data:{
+      message:"hello world",
+      isShow:true
+    }
+  })
+</script>
+</body>
+</html>

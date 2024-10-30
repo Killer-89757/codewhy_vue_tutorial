@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  // 第一种简写方式
+  // new Promise((resolve,reject)=>{
+  //     setTimeout(()=>{
+  //         resolve("waws")
+  //     },1000)
+  // }).then(data=>{
+  //     console.log(data);
+  //     return Promise.resolve(data + "神")
+  // }).then(data=>{
+  //     console.log(data);
+  //     return Promise.resolve(data + "神")
+  // }).then(data=>{
+  //     console.log(data);
+  //     return Promise.resolve(data + "神")
+  // }).then(data=>{
+  //     console.log(data);
+  //     return Promise.reject(data + "error")
+  // }).catch(data=>{
+  //     console.log(data);
+  //     return Promise.resolve(data + "神")
+  // }).then((data)=>{
+  //     console.log(data);
+  // })
+
+  // 第二种简写方式
+  new Promise((resolve,reject)=>{
+      setTimeout(()=>{
+          resolve("waws")
+      },1000)
+  }).then(data=>{
+      console.log(data);
+      return data + "神"
+  }).then(data=>{
+      console.log(data);
+      return data + "神"
+  }).then(data=>{
+      console.log(data);
+      return data + "神"
+  }).then(data=>{
+      console.log(data);
+      return Promise.reject(data + "error")
+  }).catch(data=>{
+      console.log(data);
+      return data + "神"
+  }).then((data)=>{
+      console.log(data);
+  })
+
+</script>
+</html>

@@ -1,0 +1,29 @@
+<!--作业需求-->
+<!--1.点击我们的li标签，标签变红，其余标签变成黑色-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <ul>
+    <li v-for="item in movies">{{item}}</li>
+  </ul>
+</div>
+
+<script src="../vue.js"></script>
+
+<script>
+  const app = new Vue({
+    el:"#app",
+    data:{
+      message:"hello world",
+      movies:["海贼王","银魂","火影忍者","进击的巨人","棋魂"]
+    }
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <!--传统写法-->
+  <h2>{{firstname}} {{lastname}}</h2>
+  <h2>{{firstname + " " +lastname}}</h2>
+
+  <!--使用method改进成形式-->
+  <h2>{{getfullname()}}</h2>
+
+  <!--使用method改进成形式-->
+  <h2>{{fullname}}</h2>
+</div>
+
+<script src="../vue.js"></script>
+
+<script>
+  const app = new Vue({
+    el:"#app",
+    data:{
+      message:"hello world",
+      firstname:"waws",
+      lastname:"520",
+    },
+    methods:{
+      getfullname:function (){
+        return this.firstname + " " + this.lastname
+      }
+    },
+    computed:{
+      fullname:function (){
+        return this.firstname + " " + this.lastname
+      }
+    }
+  })
+</script>
+</body>
+</html>

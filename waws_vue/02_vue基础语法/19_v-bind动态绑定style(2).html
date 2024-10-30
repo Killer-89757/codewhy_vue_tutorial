@@ -1,0 +1,30 @@
+<!--这个主要是v-bind的绑定style使用-->
+<!--1.使用v-bind进行数组修改style属性-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <!--<h2 :style="["AAA","BBB"]"></h2>-->
+  <!--直接使用数组的方式进行style的赋值-->
+  <h2 :style="[baseStyles, overridingStyles]">{{message}}</h2>
+</div>
+
+<script src="../vue.js"></script>
+
+<script>
+  const app = new Vue({
+    el:"#app",
+    data:{
+      message:"hello world",
+      baseStyles:{fontSize:"100px"},
+      overridingStyles:{color:"red"}
+    }
+  })
+</script>
+</body>
+</html>

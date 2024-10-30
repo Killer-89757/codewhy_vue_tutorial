@@ -1,0 +1,41 @@
+<!--这个主要是初步对于vue的v-for使用-->
+<!--1.<li v-for="item in movies">{{item}}</li>-->
+<!--2.主要针对的是列表元素-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+<!--  使用下标的方式进行便利输出数据-->
+<!--  <ul>-->
+<!--    <li>{{movies[0]}}</li>-->
+<!--    <li>{{movies[1]}}</li>-->
+<!--    <li>{{movies[2]}}</li>-->
+<!--    <li>{{movies[3]}}</li>-->
+<!--  </ul>-->
+
+<!--使用v-for进行遍历-->
+  <ul>
+    <li v-for="item in movies">{{item}}</li>
+  </ul>
+</div>
+
+
+<script src="../vue.js"></script>
+<script>
+  const app = new Vue({
+    el:"#app",
+    data:{
+      message:"hello vue",
+      movies:["海贼王","火影忍者","七龙珠","乌龙院","老夫子"],
+    }
+  })
+
+</script>
+</body>
+</html>

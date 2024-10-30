@@ -1,0 +1,39 @@
+<!--这个主要是v-bind的绑定class使用-->
+<!--1.使用v-bind进行类模式修改class属性-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+      .active{
+          color:red
+      }
+      .line{
+          text-decoration: underline;
+      }
+  </style>
+</head>
+<body>
+<div id="app">
+  <!--类的语法 {key1:value1,key2:value2}-->
+  <!--<h2 v-bind:class="{类名1:true,类名2:false}"></h2>-->
+  <!--<div v-bind:class="{active:true,line:true}">{{message}}</div>-->
+  <div v-bind:class="{active:isactive,line:isline}">{{message}}</div>
+</div>
+
+<script src="../vue.js"></script>
+
+<script>
+  const app = new Vue({
+    el:"#app",
+    data:{
+      message:"hello world",
+      isactive:true,
+      isline:true,
+    }
+  })
+</script>
+</body>
+</html>

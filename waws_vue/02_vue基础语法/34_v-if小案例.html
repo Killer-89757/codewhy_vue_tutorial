@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div id="app">
+  <div></div>
+  <span v-if="isShow">{{user_style}}
+    <label for="name"></label>
+<!--    <input type="text" name="" id="name" :placeholder="user_style">-->
+    <input type="text" name="" id="name" :placeholder="user_style" key="abc">
+  </span>
+  <span v-else>{{passwd_style}}
+  <label for="name1"></label>
+<!--    <input type="text" name="" id="name1" :placeholder="passwd_style">-->
+    <input type="text" name="" id="name1" :placeholder="passwd_style" key="def">
+  </span>
+
+  <button @click="changename">切换类型</button>
+</div>
+
+<script src="../vue.js"></script>
+
+<script>
+  const app = new Vue({
+    el:"#app",
+    data:{
+      isShow:true,
+      user_style:"用户账号",
+      passwd_style:"密码登录",
+    },
+    methods:{
+      changename(){
+        this.isShow = !this.isShow;
+    }}
+  })
+</script>
+</body>
+</html>

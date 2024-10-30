@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <my_cpn></my_cpn>
+  <my_cpn></my_cpn>
+</div>
+
+<template id="cpn1">
+  <div>
+    <h2>当前的计数：{{counter}}</h2>
+    <button @click="add">+</button>
+    <button @click="sub">-</button>
+  </div>
+</template>
+
+<script src="../vue.js"></script>
+
+<script>
+
+  Vue.component("my_cpn",{
+    template:'#cpn1',
+
+    data(){
+      return {
+        counter:0
+      }
+    },
+    methods:{
+      add:function (){
+        this.counter++
+      },
+      sub:function (){
+        this.counter--
+      },
+    }
+  })
+
+
+  const app = new Vue({
+    el:"#app",
+    data:{
+      message:"hello world"
+    }
+  })
+</script>
+</body>
+</html>

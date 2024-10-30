@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<div id="app">
+  <!--注意这个部分还是不能使用驼峰标识-->
+  <my_cpn @item-click="cpnClick"></my_cpn>
+</div>
+
+
+<template id="cpn">
+  <div>
+    <button v-for="item in categories" @click="btnClick(item)">{{item.name}}</button>
+  </div>
+</template>
+
+<script src="../vue.js"></script>
+
+<script>
+
+  const my_cpn = Vue.extend({
+    template:"#cpn",
+    data(){
+      return {
+        categories:[
+          {id:"aaa",name:"手机数码"},
+          {id:"bbb",name:"热门推荐"},
+          {id:"ccc",name:"家用电器"},
+          {id:"ddd",name:"空调维修"},
+        ]
+      }
+    },
+    methods:{
+      btnClick(item){
+        // console.log(item)
+        this.$emit("item-click",item)
+      }
+    }
+  })
+
+
+  const app = new Vue({
+    el:"#app",
+    data:{
+      message:"hello world"
+    },components:{
+      my_cpn:my_cpn
+    },methods:{
+      // 在上面的位置中不用进行书写，我们这个地方默认是进行了参数的传递的
+      cpnClick(item){
+        console.log("我见听到了子组件的事件",item.name)
+      }
+    }
+  })
+</script>
+</body>
+</html>
